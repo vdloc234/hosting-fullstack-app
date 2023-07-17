@@ -43,6 +43,8 @@ jobs:
    - image: "cimg/node:14.15"
    # more setup needed for aws, node, elastic beanstalk
   steps:
+   - node/install:
+      node-version: "14.15"
    - eb/setup
    - aws-cli/setup
    - checkout
