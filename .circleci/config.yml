@@ -30,7 +30,7 @@ jobs:
       command: |
        npm run api:install
    - run:
-      name: Front-End Build
+      name: Front-end Build
       command: |
        npm run frontend:build
    - run:
@@ -57,15 +57,15 @@ jobs:
             echo $(npm --version)
             npm run frontend:install
    - run:
-      name: Back-End Install
+      name: Back-end Install
       command: |
        npm run api:install
    - run:
-      name: Front-End Build
+      name: Front-end Build
       command: |
        npm run frontend:build
    - run:
-      name: Back-End Build
+      name: Back-end Build
       command: |
        npm run api:build
    - run:
@@ -76,11 +76,11 @@ jobs:
 workflows:
  udagram:
   jobs:
-   - build
+   - build:
      filters:
-       branches:
-        only:
-         - main
+      branches:
+       only:
+        - main
    - deploy:
       requires:
        - build
