@@ -13,7 +13,7 @@
 		"prod": "npx tsc && node ./www/server.js",
 		"clean": "rm -rf www/ || true",
 		"deploy": "npm run build && eb init eb2 --region us-east-1 && chmod +x bin/deploy.sh && bin/deploy.sh && eb use udacity-api-env && eb deploy udacity-api-env",
-		"build": "npm install .  && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json",
+		"build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
@@ -46,7 +46,7 @@
 		"@typescript-eslint/parser": "^2.19.2",
 		"chai": "^4.2.0",
 		"chai-http": "^4.2.1",
-		"eslint": "^8.45.0",
+		"eslint": "^6.8.0",
 		"eslint-config-google": "^0.14.0",
 		"mocha": "^10.2.0",
 		"ts-node-dev": "^1.0.0-pre.32",
