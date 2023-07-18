@@ -23,7 +23,7 @@
    # Replace [udagram-s3] with the S3 bucket name
    aws s3 cp --recursive --acl public-read ./build s3://[udagram-s3]/
    ```
-2. **Update the frontend package.json** - Add a new "deploy" script. The "scripts" section will look like this:
+2. **Update the frontend package.json** - Add a new "deploy" like this:
    ```typescript
    "scripts": {
        "start": "react-scripts start",
