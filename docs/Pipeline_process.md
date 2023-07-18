@@ -16,7 +16,7 @@
 2. **Update the config.yml:**
    - Add two steps in the pipeline to install node dependencies in the **frontend** server and build the UI.
    - Add two steps in the pipeline to install node dependencies in the **backend** server and build the UI.
-3. **Trigger:** Push the changes to the GitHub repo. After pushing this change to our GitHub repo, CircleCI will trigger, and we will complete the continuous integration step!
+3. **Trigger:** Push the changes to the GitHub repo. After pushing this change to our GitHub repo, CircleCI will trigger, and we will complete the continuous integration step.
 
 ## 3. Continuous Delivery and Deployment Instruction
 
