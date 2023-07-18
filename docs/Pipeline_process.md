@@ -4,18 +4,16 @@
 
 ## 1. Set up CircleCI and connect to GitHub
 
-1. Create a pipeline file in the **.circleci** folder and name it **config.yml**.
-2. Create a new repository on GitHub and push the project to that repository.
-3. Sign up for a [free account](https://circleci.com/signup/?source-button=free) on CircleCI using your GitHub credentials.
-4. Set up a new project in the CircleCI dashboard using the GitHub repository you just created. Select the existing **.circleci/config.yml** file in the repository.
-5. Test the pipeline by committing and pushing a new change to the repository. This will trigger a pipeline run in the CircleCI UI.
+1. **Step 1** Create a pipeline file in the **.circleci** folder and name it **config.yml**.
+2. **Step 2** Create a new repository on GitHub and push the project to that repository.
+3. **Step 3** Sign up for a [free account](https://circleci.com/signup/?source-button=free) on CircleCI using your GitHub credentials.
+4. **Step 4** Set up a new project in the CircleCI dashboard using the GitHub repository you just created. Select the existing **.circleci/config.yml** file in the repository.
+5. **Step 5** Trigger pipeline run in the CircleCI UI by committing and pushing a new change to the repository.
 
 ## 2. Continuous Integration Instruction
 
 1. **Update the root package.json file.**
 2. **Update the config.yml:**
-   - Add two steps in the pipeline to install node dependencies in the **frontend** server and build the UI.
-   - Add two steps in the pipeline to install node dependencies in the **backend** server and build the UI.
 3. **Trigger:** Push the changes to the GitHub repo. After pushing this change to our GitHub repo, CircleCI will trigger, and we will complete the continuous integration step.
 
 ## 3. Continuous Delivery and Deployment Instruction
